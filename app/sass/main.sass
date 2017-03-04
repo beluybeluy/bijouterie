@@ -1,0 +1,71 @@
+@import "veriables"
+@import "mixins"
+@import "fonts"
+::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+  font: 16px/16px UbuntuRegular 
+*
+   padding: 0
+   margin: 0
+.container
+   max-width: 1200px
+   margin: auto
+.over-title
+   color: $main-col
+   font: 15px/40px RobotoRegular
+   text-transform: uppercase
+   letter-spacing: 2px
+.title
+   font: 60px/60px RobotoRegular
+   &_theme-dark
+      color: #000
+   &_theme-light
+       color: #fff
+.description
+   font: 18px/28px UbuntuRegular
+   &_theme-light
+      color: #fff
+   &_theme-dark
+      color: $col-darkGrey   
+.button
+   border-radius: 25px
+   border: none
+   padding: 18px 64px
+   font: 18px/18px UbuntuMedium
+   cursor: pointer
+   &_theme-purple
+      color: #fff
+      background: $main-col
+   &_theme-white
+      color: #000
+      border: 2px solid $main-col
+      background: #fff
+      
+.section_content-align
+   text-align: center   
+.section_theme-white
+   background: #fff
+.section_theme-grey
+   background: $section-color
+.section_theme-blue
+   background: $col-blue
+
+.icon
+   height: 93px
+   width: 93px
+   border: 2px solid $icon-brd-col
+   border-radius: 50%;
+   display: inline-block
+@import "header"
+@import "home"
+@import "advantages"
+@import "company"
+@import "shops"
+@import "banner"
+@import "products"
+@import "tariff"
+@import "team"
+@import "photos"
+@import "contact"
+@import "footer"
+@import "mediaqueries"   
+   

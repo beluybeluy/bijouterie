@@ -1,0 +1,513 @@
+@font-face {
+  font-family: UbuntuBold;
+  src: url(../fonts/Ubuntu-Bold.ttf); }
+
+@font-face {
+  font-family: UbuntuRegular;
+  src: url(../fonts/Ubuntu-Regular.ttf); }
+
+@font-face {
+  font-family: UbuntuMedium;
+  src: url(../fonts/Ubuntu-Medium.ttf); }
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+::-webkit-input-placeholder {
+  font: 16px/16px UbuntuRegular; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+.over-title {
+  color: #925ebf;
+  font: 15px/40px RobotoRegular;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.title {
+  font: 60px/60px RobotoRegular; }
+  .title_theme-dark {
+    color: #000; }
+  .title_theme-light {
+    color: #fff; }
+
+.description {
+  font: 18px/28px UbuntuRegular; }
+  .description_theme-light {
+    color: #fff; }
+  .description_theme-dark {
+    color: #7b7b7b; }
+
+.button {
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  border: none;
+  padding: 18px 64px;
+  font: 18px/18px UbuntuMedium;
+  cursor: pointer; }
+  .button_theme-purple {
+    color: #fff;
+    background: #925ebf; }
+  .button_theme-white {
+    color: #000;
+    border: 2px solid #925ebf;
+    background: #fff; }
+
+.section_content-align {
+  text-align: center; }
+
+.section_theme-white {
+  background: #fff; }
+
+.section_theme-grey {
+  background: #f6f6f6; }
+
+.section_theme-blue {
+  background: #363d4b; }
+
+.icon {
+  height: 93px;
+  width: 93px;
+  border: 2px solid #e7e7e7;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: inline-block; }
+
+.header {
+  background: #fb6d6d;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+
+.nav {
+  margin-left: 80px;
+  background: red; }
+  .nav__list {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 430px; }
+  .nav__item {
+    list-style: none;
+    padding: 0 20px; }
+  .nav__link {
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    font: 14px/14px UbuntuRegular;
+    cursor: pointer; }
+
+.header-contact {
+  background: green; }
+  .header-contact__number {
+    font: 16px/16px UbuntuBold;
+    color: #fff; }
+
+.home {
+  background: url(../img/home-bg.jpg) center no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  position: relative; }
+  .home__description {
+    padding: 35px 0 45px 0; }
+  .home__slogan {
+    padding: 220px 0 50px 0;
+    display: block;
+    color: #9a9da9;
+    font: 15px/15px RobotoRegular; }
+  .home__arrow-down {
+    height: 58px;
+    width: 58px;
+    margin: auto;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #fff url(../img/arrow-down.png) no-repeat center;
+    cursor: pointer;
+    bottom: -29px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    position: absolute; }
+
+.advantages {
+  padding-top: 85px;
+  padding-bottom: 130px; }
+  .advantages__description {
+    padding-top: 25px; }
+  .advantages__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 80px; }
+  .advantages-item {
+    text-align: center; }
+    .advantages-item__title {
+      font: 20px/34px RobotoRegular;
+      text-transform: uppercase;
+      padding: 25px 0; }
+    .advantages-item__description {
+      font: 18px/25px Arial;
+      color: #7b7b7b; }
+
+.icon_theme-alarm {
+  background: url(../img/icon-alarm.png) no-repeat center; }
+
+.icon_theme-wallet {
+  background: url(../img/icon-wallet.png) no-repeat center; }
+
+.icon_theme-home {
+  background: url(../img/icon-home.png) no-repeat center; }
+
+.company {
+  padding: 110px 0 115px 0; }
+  .company__description {
+    padding-top: 40px; }
+  .company-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 115px; }
+    .company-item_reverse {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-flow: row-reverse;
+          -ms-flex-flow: row-reverse;
+              flex-flow: row-reverse; }
+  .company-info__button {
+    margin-top: 40px; }
+  .company-info_right {
+    text-align: right; }
+  .company-info_left {
+    text-align: left; }
+  .company-info__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .company-info__header_right {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-flow: row-reverse;
+          -ms-flex-flow: row-reverse;
+              flex-flow: row-reverse; }
+  .company-info__title {
+    font: 28px/40px RobotoRegular; }
+  .company-info__description {
+    color: #8c8f94;
+    font: 15px/25px UbuntuRegular; }
+    .company-info__description_position {
+      padding-top: 30px; }
+  .company-info__icon_left {
+    margin-left: 30px; }
+  .company-info__icon_right {
+    margin-right: 30px; }
+  .company-product_left {
+    text-align: left;
+    margin-left: 120px; }
+  .company-product_right {
+    margin-right: 120px; }
+
+.icon_theme-stats {
+  background: url(../img/icon-stats.png) no-repeat center; }
+
+.icon_theme-newspaper {
+  background: url(../img/icon-newspaper.png) no-repeat center; }
+
+.icon_pos-left {
+  margin-left: 30px; }
+
+.shops {
+  padding: 115px 0; }
+  .shops__description {
+    padding-top: 30px; }
+  .shops-slider {
+    margin-top: 55px; }
+  .shops-slide {
+    width: 285px;
+    margin-right: 20px;
+    background: #fff;
+    padding-bottom: 40px; }
+    .shops-slide__img {
+      width: 100%;
+      height: 225px; }
+    .shops-slide-text {
+      padding: 30px 0; }
+      .shops-slide-text__title {
+        font: 20px/27px UbuntuRegular;
+        padding-bottom: 15px; }
+      .shops-slide-text__description {
+        font: 14px/20px UbuntuRegular;
+        color: #7b7b7b; }
+
+.banner {
+  padding: 115px 0;
+  background: url(../img/banner.jpg); }
+  .banner__description {
+    margin-top: 30px; }
+  .banner__button {
+    margin-top: 30px; }
+
+.products {
+  padding: 115px 0; }
+  .products-slide-text {
+    text-align: left;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff; }
+  .products-slide__title {
+    font: 30px/50px UbuntuBold; }
+  .products-slide__description {
+    font: 16px/22px UbuntuRegular; }
+  .products__description {
+    padding-top: 30px; }
+  .products-list {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .products-list__item {
+      list-style: none;
+      margin-right: 20px; }
+  .products-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .products-item {
+    width: 285px;
+    padding-bottom: 40px; }
+    .products-item__img {
+      width: 100%;
+      height: 273px; }
+    .products-item-text {
+      padding: 15px 0 15px 0; }
+    .products-item-text__description {
+      font: 14px/18px UbuntuRegular;
+      color: #925ebf; }
+    .products-item__price {
+      font: 21px/21px UbuntuBold; }
+  .products-slider {
+    margin-bottom: 20px; }
+  .products-slide {
+    width: 896px;
+    height: 400px;
+    background: url(../img/products-slide-1.jpg) no-repeat center; }
+
+.tariff {
+  padding: 115px 0 165px 0; }
+  .tariff__button {
+    padding: 18px 48px; }
+  .tariff__description {
+    padding-top: 60px; }
+  .tariff-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px; }
+  .tariff-item {
+    background: #fff;
+    padding: 62px; }
+    .tariff-item-header__type {
+      font: 20px/38px UbuntuMedium;
+      color: #925ebf; }
+    .tariff-item-header__price {
+      font: 60px/60px UbuntuBold;
+      padding-bottom: 15px; }
+      .tariff-item-header__price_sup-weight {
+        font: 28px/28px UbuntuBold; }
+    .tariff-item-header__month {
+      font: 16px/16px UbuntuMedium;
+      text-transform: uppercase;
+      color: #8c8f94; }
+    .tariff-item-text__description {
+      font: 16px/30px UbuntuRegular;
+      padding: 20px 0 25px 0; }
+
+.team {
+  padding: 75px 0px 170px 0; }
+
+.team-slide__img {
+  height: 130px;
+  width: 130px;
+  margin: auto;
+  background: url(../img/team.jpg) no-repeat center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.team-slide-text {
+  padding-top: 65px; }
+  .team-slide-text__title {
+    font: 20px/42px UbuntuMedium;
+    text-transform: uppercase; }
+  .team-slide-text__description {
+    font: 18px/28px UbuntuRegular;
+    color: #7b7b7b; }
+
+.photos {
+  padding: 115px 0; }
+  .photos-slider {
+    margin-top: 60px; }
+  .photos-slide {
+    height: 300px;
+    width: 390px;
+    margin-top: 10px; }
+    .photos-slide__img {
+      max-width: 390px;
+      height: 300px; }
+  .photos__description {
+    padding-top: 40px; }
+
+.contact {
+  padding: 115px 0; }
+  .contact__description {
+    padding-top: 30px; }
+  .contact__button {
+    padding: 18px 45px;
+    margin-bottom: 25px; }
+  .contact__join {
+    font: 16px/16px UbuntuRegular;
+    color: #7b7b7b; }
+
+.form-wrap {
+  margin: 30px 0; }
+
+.form-contact {
+  margin: auto;
+  max-width: 720px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .form-contact__input {
+    margin-bottom: 20px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 300px;
+        -ms-flex: 1 300px;
+            flex: 1 300px;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    border: 1px solid #dedede; }
+    .form-contact__input_margin {
+      margin-left: 20px; }
+  .form-contact__field {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 700px;
+        -ms-flex: 1 700px;
+            flex: 1 700px;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    padding: 20px;
+    min-height: 145px; }
+
+.footer {
+  padding: 40px 0; }
+  .footer-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer-wrap__text {
+      font: 16px/16px UbuntuRegular;
+      color: #7b7b7b; }
+      .footer-wrap__text_color {
+        color: #925ebf; }
+  .footer__icon_theme-purple {
+    color: #925ebf; }
+  .footer-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer-list__item {
+      list-style: none; }
+    .footer-list__link {
+      padding: 0 5px;
+      color: #7b7b7b; }
+
+@media screen and (max-width: 768px) {
+  .header-contact {
+    display: none; }
+  .nav {
+    display: none; } }
