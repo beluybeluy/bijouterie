@@ -1,14 +1,18 @@
 .company
    padding: 110px 0 115px 0
+   &-wrap
+      flex-flow: wrap
    &__description
       padding-top: 40px
    &-item
       display: flex
       justify-content: center
+      flex-flow: wrap
       padding-top: 115px
       &_reverse
          flex-flow: row-reverse
    &-info
+      flex: 1 400px
       &__button
          margin-top: 40px
       &_right
@@ -36,11 +40,17 @@
       &__icon_right
          margin-right: 30px
    &-product
+      flex: 1 300px
+      display: flex
       &_left
          text-align: left
          margin-left: 120px
       &_right
          margin-right: 120px
+      &__img
+         margin: auto
+         max-width: 100%
+         min-height: 280px
       
 .icon_theme-stats
    background: url(../img/icon-stats.png) no-repeat center      

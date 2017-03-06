@@ -1,10 +1,70 @@
 +desktop
-
+   .products-item
+      margin: auto
+      
+   .products-list__item
+      margin: 20px auto 0px 
+   .tariff-item
+      margin: auto
+      flex: 1 270px
+   .company-product
+      margin: auto
+   .products-slider
+      order: 2
+      max-width: 100%
 +tablet
+   .company-info
+      text-align: center
+      &__header
+         justify-content: center
+   .company-product__img
+      margin-top: 50px   
+   
    .header-contact
       display: none
    .nav
       display: none
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      margin: auto
+      &__list
+         max-width: 100%
+         flex-direction: column
+      &__item
+         margin: auto
+         text-align: center
+         background: #fff
+         width: 100%
+         padding: 0
+      &__link
+         padding: 20px 0
+         box-sizing: border-box
+         background: #fff
+         color: $main-col
+         transition: .5s ease-out
+         &:hover 
+            background: $main-col
+            color: #fff
+            transition: .5s ease-in
+   .touch-nav
+      display: block
+   .advantages
+      &-item
+         padding-top: 30px
+   .company
+      &-item
+         flex-flow: wrap
+      &-info
+   .form-contact__input_margin
+      margin-left: 0px
+   .footer-wrap
+      flex-flow: column
+      align-items: center
+      &__text
+         padding-bottom: 20px
+         
 +xlPhone
 
 +xsPhone

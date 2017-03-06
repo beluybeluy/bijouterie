@@ -15,13 +15,13 @@
       <div class="header__logo"><img src="../img/logo.png"></div>
       <nav class="nav header__nav">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link">О компании</a></li>
-          <li class="nav__item"><a class="nav__link">Галерея</a></li>
-          <li class="nav__item"><a class="nav__link">Блог</a></li>
-          <li class="nav__item"><a class="nav__link nav__link_last">Клиенты    </a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">О компании</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Галерея</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Блог</a></li>
+          <li class="nav__item"><a class="nav__link nav__link_last" href="#contact">Клиенты    </a></li>
         </ul>
       </nav>
-      <div class="header-contact"><span class="header-contact__number">8 800 123-45-67</span></div>
+      <div class="header-contact"><span class="header-contact__number">8 800 123-45-67</span></div><a class="touch-nav" href="#"><span class="touch-nav__item"></span><span class="touch-nav__item"></span><span class="touch-nav__item"></span></a>
     </header>
     <section class="home section_content-align">
       <div class="container">
@@ -95,17 +95,29 @@
         <h1 class="title">Магазины бижутерии</h1>
         <h5 class="description shops__description description_theme-dark">
            Ювелирная бижутерия ― основа медь  покрывают чистым золотом с пробой 18 - 2 карата.<br>Позолоченные покрытия примерно вдвое</h5>
-        <div class="slider shops-slider">
-          <div class="shops-slide"><img class="shops-slide__img" src="img/slide-1.png">
-            <div class="shops-slide-text">
-              <h2 class="shops-slide-text__title">Магазин Donjon</h2>
-              <p class="shops-slide-text__description">
-                 На нашем сайте Вы всегда найдете<br>канцтовары, бумагу и другие товары<br>для офиса по низким ценам.</p>
+        <div class="shops-slider">
+          <div class="shops-slide">
+            <div class="shops-slide-inner"><img class="shops-slide__img" src="img/slide-1.png">
+              <div class="shops-slide-text">
+                <h2 class="shops-slide-text__title">Магазин Donjon</h2>
+                <p class="shops-slide-text__description">
+                   На нашем сайте Вы всегда найдете<br>канцтовары, бумагу и другие товары<br>для офиса по низким ценам.</p>
+              </div>
+              <button class="button button_theme-white">Смотреть         </button>
             </div>
-            <button class="button button_theme-white">Смотреть         </button>
           </div>
-          <div class="shops-slider__slide">
-            <div class="shops-slide"><img class="shops-slide__img" src="img/slide-2.png">
+          <div class="shops-slide">
+            <div class="shops-slide-inner"><img class="shops-slide__img" src="img/slide-2.png">
+              <div class="shops-slide-text">
+                <h2 class="shops-slide-text__title">Магазин Donjon</h2>
+                <p class="shops-slide-text__description">
+                   На нашем сайте Вы всегда найдете<br>канцтовары, бумагу и другие товары<br>для офиса по низким ценам.</p>
+              </div>
+              <button class="button button_theme-white">Смотреть       </button>
+            </div>
+          </div>
+          <div class="shops-slide">
+            <div class="shops-slide-inner"><img class="shops-slide__img" src="img/slide-3.png">
               <div class="shops-slide-text">
                 <h2 class="shops-slide-text__title">Магазин Donjon</h2>
                 <p class="shops-slide-text__description">
@@ -114,18 +126,8 @@
               <button class="button button_theme-white">Смотреть      </button>
             </div>
           </div>
-          <div class="shops-slider__slide">  
-            <div class="shops-slide"><img class="shops-slide__img" src="img/slide-3.png">
-              <div class="shops-slide-text">
-                <h2 class="shops-slide-text__title">Магазин Donjon</h2>
-                <p class="shops-slide-text__description">
-                   На нашем сайте Вы всегда найдете<br>канцтовары, бумагу и другие товары<br>для офиса по низким ценам.</p>
-              </div>
-              <button class="button button_theme-white">Смотреть      </button>
-            </div>
-          </div>
-          <div class="shops-slider__slide">  
-            <div class="shops-slide"><img class="shops-slide__img" src="img/slide-4.png">
+          <div class="shops-slide">
+            <div class="shops-slide-inner"><img class="shops-slide__img" src="img/slide-4.png">
               <div class="shops-slide-text">
                 <h2 class="shops-slide-text__title">Магазин Donjon</h2>
                 <p class="shops-slide-text__description">
@@ -152,18 +154,10 @@
         <h5 class="description description_theme-dark products__description">
            Ювелирная бижутерия ― основа медь  покрывают чистым золотом с пробой 18 - 2 карата.<br>Позолоченные покрытия примерно вдвое</h5>
         <ul class="products-list">
-          <li class="products-list__item">
-            <button class="button button_theme-white">Все товары</button>
-          </li>
-          <li class="products-list__item">
-            <button class="button button_theme-white">Серьги</button>
-          </li>
-          <li class="products-list__item">
-            <button class="button button_theme-white">Кольца</button>
-          </li>
-          <li class="products-list__item">
-            <button class="button button_theme-white">Серьги</button>
-          </li>
+          <li class="products-list__item"><a class="products-list__link button button_theme-white" href="#">Все товары</a></li>
+          <li class="products-list__item"><a class="products-list__link button button_theme-white" href="#">Серьги</a></li>
+          <li class="products-list__item"><a class="products-list__link button button_theme-white" href="#">Кольца</a></li>
+          <li class="products-list__item"><a class="products-list__link button button_theme-white" href="#">Серьги</a></li>
         </ul>
         <div class="products-wrap">
           <div class="products-item"><img class="products-item__img" src="../img/products-1.jpg">
@@ -191,6 +185,12 @@
               <div class="products-slide-text">
                 <h1 class="products-slide__title">Cartier black & white </h1>
                 <p class="products-slide__description">На нашем сайте Вы всегда найдете канцтовары, бумагу и другие<br>товары для офиса по самим низким ценам  </p>
+              </div>
+            </div>
+            <div class="products-slide">
+              <div class="products-slide-text">
+                <h1 class="products-slide__title">Cartier black & white </h1>
+                <p class="products-slide__description">На нашем сайте Вы всегда найдете канцтовары, бумагу и другие<br>товары для офиса по самим низким ценам                          </p>
               </div>
             </div>
           </div>
@@ -272,6 +272,22 @@
                  Реалии нашего бизнеса таковы, что стремление к снижению<br>налоговой нагрузки присуще практически <br>каждому предприятию.</p>
             </div>
           </div>
+          <div class="team-slide">
+            <div class="team-slide__img"></div>
+            <div class="team-slide-text">
+              <h1 class="team-slide-text__title">Марк хьюстон</h1>
+              <p class="team-slide-text__description">
+                 Реалии нашего бизнеса таковы, что стремление к снижению<br>налоговой нагрузки присуще практически <br>каждому предприятию.   </p>
+            </div>
+          </div>
+          <div class="team-slide">
+            <div class="team-slide__img"></div>
+            <div class="team-slide-text">
+              <h1 class="team-slide-text__title">Марк хьюстон</h1>
+              <p class="team-slide-text__description">
+                 Реалии нашего бизнеса таковы, что стремление к снижению<br>налоговой нагрузки присуще практически <br>каждому предприятию.         </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -296,7 +312,7 @@
         </div>
       </div>
     </section>
-    <section class="contact section_content-align section_theme-grey">
+    <section class="contact section_content-align section_theme-grey" id="contact">
       <div class="container">
         <h1 class="title">Хотите работать с нами?</h1>
         <h5 class="description contact__description description_theme-dark">

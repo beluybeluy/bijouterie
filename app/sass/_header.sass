@@ -1,18 +1,17 @@
 .header
-   background: #fb6d6d
    display: flex
-   padding: 20px 0
+   padding: 20px 
    justify-content: space-between
-   //padding-top: 25px
    position: absolute
    top: 0
    left: 0
    right: 0
    z-index: 2
+   box-sizing: border-box
    &__logo
 .nav
+   position: relative
    margin-left: 80px  
-   background: red
    &__list
        justify-content: space-between
        display: flex   
@@ -26,9 +25,54 @@
       color: #fff
       font: 14px/14px UbuntuRegular
       cursor: pointer
+      text-decoration: none
 .header-contact
-   background: green
    &__number
       font: 16px/16px UbuntuBold
       color: #fff
+.touch-nav
+   display: none
+   position: absolute
+   width: 45px
+   height: 45px
+   right: 20px
+   top: 50%
+   transform: rotate(0deg) translateY(-50%)
+   transition: .5s ease-in-out  
+   cursor: pointer   
+   &__item
+      display: block
+      position: absolute
+      height: 7px
+      width: 100%
+      background: #fff
+      border-radius: 9px
+      opacity: 1
+      left: 0
+      transform: rotate(0deg)
+      transition: .25s ease-in-out
+      &:first-child
+         top: 2px
+      &:nth-child(2)
+         top: 16px
+      &:last-child
+         top: 30px
+.touch-nav.open .touch-nav__item:first-child
+   top: 16px
+   transform: rotate(135deg)
+.touch-nav.open .touch-nav__item:nth-child(2)
+   opacity: 0
+   left: -60px
+.touch-nav.open .touch-nav__item:last-child
+   top: 16px
+   transform: rotate(-135deg)
+.touch-nav__item.open   
+   background: #000   
+.sticky
+   position: fixed
+   top: 0
+   left: 0
+   z-index: 1000
+   right: 0  
+   background: $main-col
        
