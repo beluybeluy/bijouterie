@@ -11,17 +11,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
-    <header class="header container">
-      <div class="header__logo"><img src="../img/logo.png"></div>
-      <nav class="nav header__nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#contact">О компании</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contact">Галерея</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contact">Блог</a></li>
-          <li class="nav__item"><a class="nav__link nav__link_last" href="#contact">Клиенты    </a></li>
-        </ul>
-      </nav>
-      <div class="header-contact"><span class="header-contact__number">8 800 123-45-67</span></div><a class="touch-nav" href="#"><span class="touch-nav__item"></span><span class="touch-nav__item"></span><span class="touch-nav__item"></span></a>
+    <header class="header">
+      <div class="container">
+        <div class="header__flex"><a class="header__logo" href=".home"><img src="../img/logo.png"></a>
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href=".contact">О компании</a></li>
+              <li class="nav__item"><a class="nav__link" href=".photos">Галерея</a></li>
+              <li class="nav__item"><a class="nav__link" href=".tariff">Блог</a></li>
+              <li class="nav__item"><a class="nav__link nav__link_last" href=".team">Клиенты    </a></li>
+            </ul>
+          </nav>
+          <div class="header-contact"><span class="header-contact__number">8 800 123-45-67</span></div><a class="touch-nav" href="#"><span class="touch-nav__item"></span><span class="touch-nav__item"></span><span class="touch-nav__item"></span></a>
+        </div>
+      </div>
     </header>
     <section class="home section_content-align">
       <div class="container">
@@ -29,8 +32,7 @@
         <h1 class="title title_theme-light">
            Ювелирная бижутерия<br>высшее качество !</h1>
         <h5 class="description description_theme-light home__description">Ювелирная бижутерия ― основа медь  покрывают чистым золотом с пробой 18 - 2 карата. <br>Позолоченные покрытия примерно вдвое повышают твёрдость поверхности и являются<br>хорошим средством защиты её от коррозии.</h5>
-        <button class="button button_theme-purple">Заказать</button><span class="home__slogan">Осуществляем доставку товаров </span>
-        <div class="home__arrow-down"> </div>
+        <button class="button button_theme-purple">Заказать</button><span class="home__slogan">Осуществляем доставку товаров </span><a class="home__arrow-down" href=".advantages"> </a>
       </div>
     </section>
     <section class="advantages section_content-align section_theme-grey">

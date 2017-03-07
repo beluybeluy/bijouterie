@@ -1,20 +1,22 @@
-header.header.container
-   .header__logo
-      img(src="../img/logo.png")
-   nav.nav.header__nav
-      ul.nav__list
-         li.nav__item
-            a(href="#contact").nav__link О компании
-         li.nav__item
-            a(href="#contact").nav__link Галерея
-         li.nav__item
-            a(href="#contact").nav__link Блог
-         li.nav__item
-            a(href="#contact").nav__link.nav__link_last Клиенты    
-   .header-contact
-      span.header-contact__number 8 800 123-45-67
-   a(href='#').touch-nav
-      span.touch-nav__item
-      span.touch-nav__item
-      span.touch-nav__item
+header.header
+   .container
+      .header__flex
+         a(href=".home").header__logo
+            img(src="../img/logo.png")
+         nav.nav.header__nav
+            ul.nav__list
+               li.nav__item
+                  a(href=".contact").nav__link О компании
+               li.nav__item
+                  a(href=".photos").nav__link Галерея
+               li.nav__item
+                  a(href=".tariff").nav__link Блог
+               li.nav__item
+                  a(href=".team").nav__link.nav__link_last Клиенты    
+         .header-contact
+            span.header-contact__number 8 800 123-45-67
+         a(href='#').touch-nav
+            span.touch-nav__item
+            span.touch-nav__item
+            span.touch-nav__item
       

@@ -32,13 +32,26 @@
    padding: 18px 64px
    font: 18px/18px UbuntuMedium
    cursor: pointer
+   box-sizing: border-box
    &_theme-purple
       color: #fff
       background: $main-col
+      border: 2px solid transparent
+      &:hover
+         transition: .5s ease-in
+         color: #000
+         border: 2px solid $main-col
+         background: #fff
    &_theme-white
       color: #000
       border: 2px solid $main-col
       background: #fff
+      &:hover
+         transition: .5s ease-in
+         color: #fff
+         background: $main-col
+         border: 2px solid transparent
+         
       
 .section_content-align
    text-align: center   
